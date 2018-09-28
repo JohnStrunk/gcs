@@ -1,0 +1,14 @@
+---
+# Default values for gluster-container-storage.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Configuration for the etcd operator
+etcd-operator:
+  etcdOperator.image.tag: v0.9.2
+  deployments:
+    backupOperator: false
+    restoreOperator: false
+
+# An arbitrary UUID to identify the Gluster cluster
+clusterId: de1a6aac-2357-447c-977b-c1484108c34f
